@@ -49,7 +49,7 @@ const MobileNavbar = () => {
         </button>
       </nav>
       {openMenu && (
-        <div className="bg-white absolute top-0 h-screen w-full">
+        <div className="bg-white absolute top-0 h-screen w-full z-10">
           <ul className="flex flex-col h-screen justify-center items-center gap-2 text-2xl">
             {navLinks.map((navLink, index) => (
               <Link href={navLink.href} key={index}>

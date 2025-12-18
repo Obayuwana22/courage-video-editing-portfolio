@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 
@@ -18,7 +20,7 @@ const links = [
 
 const Hero = () => {
   return (
-    <section className="text-white">
+    <section className="text-white mx-5">
       <div className="flex flex-col justify-center items-center h-screen">
         <p className="text-xl">
           As a filmmaker and editor, I am passionate about bringing stories to
@@ -30,7 +32,7 @@ const Hero = () => {
               href={link.href}
               key={index}
               // className="border-2 border-white rounded-full p-5 w-52"
-              className="w-52 rounded-full p-5 bg-white/10
+              className="w-52 rounded-full p-5 bg-white/10 
   backdrop-blur-xl border border-white/30 shadow-lg transition-all duration-300
   hover:bg-white/20 hover:scale-105 active:scale-95 relative overflow-hidden
 before:absolute before:inset-0
