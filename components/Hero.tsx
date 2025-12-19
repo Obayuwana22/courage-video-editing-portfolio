@@ -21,7 +21,7 @@ const links = [
 
 const Hero = () => {
   return (
-    <section className="text-white mx-5 xl:mx-0">
+    <section className="relative text-white mx-5 xl:mx-0 z-50">
       <header>
         <MobileNavbar />
       </header>
@@ -52,6 +52,7 @@ before:transition-opacity"
           ))}
         </div>
       </div>
+      
     </section>
   );
 };

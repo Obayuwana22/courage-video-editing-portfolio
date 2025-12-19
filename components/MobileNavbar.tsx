@@ -37,8 +37,8 @@ const MobileNavbar = () => {
     <>
       <nav className="relative z-50 flex justify-between items-center pt-7 text-white xl:pl-60 xl:pt-20">
         <h1
-          className={`text-xl md:text-2xl
-          ${openMenu ? " text-black" : "top-2 text-white"}
+          className={`text-xl md:text-2xl relative z-50
+          ${openMenu ? " text-black" : "text-white"}
         `}
         >
           Courage Obayuwana Films
@@ -48,7 +48,7 @@ const MobileNavbar = () => {
           <ul className="flex gap-10">
             {navLinks.map((navLink, index) => (
               <Link href={navLink.href} key={index}>
-                <li className="capitalize">{navLink.label}</li>
+                <li className="capitalize text-white hover:text-white/70 transition-colors duration-300 cursor-pointer">{navLink.label}</li>
               </Link>
             ))}
           </ul>
@@ -57,7 +57,7 @@ const MobileNavbar = () => {
         <button
           onClick={() => setOpenMenu((prev) => !prev)}
           aria-label="Toggle menu"
-          className="relative w-8 h-8 flex items-center justify-center cursor-pointer xl:hidden"
+          className="relative w-8 h-8 flex items-center justify-center cursor-pointer xl:hidden z-50"
         >
           <span
             className={`absolute h-0.5 w-8 transition-all duration-300 ease-in-out
@@ -72,18 +72,19 @@ const MobileNavbar = () => {
         </button>
       </nav>
       <div
-        className={`bg-white absolute top-0 w-full z-10 transform transition-all duration-500 ease-in-out ${
+        className={`bg-white fixed top-0 left-0 w-full h-screen z-40 transform transition-all duration-500 ease-in-out ${
           openMenu
             ? "translate-x-0 opacity-100 pointer-events-auto"
             : "-translate-x-full opacity-0 pointer-events-none"
         }`}
       >
-        <ul className="flex flex-col h-screen justify-center items-center gap-2 text-2xl">
+        <ul className="flex flex-col h-full justify-center items-center gap-5 text-2xl text-black">
           {navLinks.map((navLink, index) => (
             <Link
               href={navLink.href}
               key={index}
               onClick={() => setOpenMenu((prev) => !prev)}
+              className="hover:text-gray-600 transition-colors duration-300"
             >
               <li className="capitalize">{navLink.label}</li>
             </Link>
