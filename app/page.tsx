@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <main className="">
-        <section className="">
+        <section className="relative h-screen">
           <Hero />
           <video
             poster="/betone18.webp"
