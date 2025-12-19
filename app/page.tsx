@@ -13,15 +13,15 @@ export default function Home() {
           autoPlay
           loop
           muted
-          className="absolute inset-0 w-full  object-cover h-screen"
+          className="absolute inset-0 w-full object-cover h-dvh"
         >
           <source src="/betkingvideo.mp4" type="video/mp4" />
         </video>
         <div className="fixed inset-0 bg-black/60 z-10" />
         <div className="relative z-10">
-          <header>
+          {/* <header>
             <MobileNavbar />
-          </header>
+          </header> */}
           <main className="">
             <section>
               <Hero />

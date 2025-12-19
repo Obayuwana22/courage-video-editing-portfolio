@@ -35,7 +35,7 @@ const MobileNavbar = () => {
 
   return (
     <>
-      <nav className="relative z-50 flex justify-between items-center px-5 pt-7 text-white xl:pl-60 xl:pt-20">
+      <nav className="relative z-50 flex justify-between items-center pt-7 text-white xl:pl-60 xl:pt-20">
         <h1
           className={`text-xl md:text-2xl
           ${openMenu ? " text-black" : "top-2 text-white"}
