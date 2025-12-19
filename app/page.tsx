@@ -1,13 +1,12 @@
 import Brands from "@/components/Brands";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <>
       <main className="">
-        <section className="relative h-screen"> 
+        <section className="">
           <Hero />
           <video
             poster="/betone18.webp"
@@ -27,8 +26,6 @@ export default function Home() {
           <section className="mt-20 md:mt-32">
             <Contact />
           </section>
-
-          <Footer />
         </div>
       </main>
     </>

@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const navLinks = [
   {
     label: "about",
-    href: "/",
+    href: "/about",
   },
   {
     label: "gear",
@@ -34,8 +34,8 @@ const MobileNavbar = () => {
   }, [openMenu]);
 
   return (
-    <>
-      <nav className="relative z-50 flex justify-between items-center pt-7 text-white xl:pl-60 xl:pt-20">
+    <div className="">
+      <nav className=" z-50 flex justify-between items-center px-5 pt-7 text-white xl:pl-60 xl:pt-20 ">
         <h1
           className={`text-xl md:text-2xl relative z-50
           ${openMenu ? " text-black" : "text-white"}
@@ -91,7 +91,7 @@ const MobileNavbar = () => {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
