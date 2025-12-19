@@ -3,7 +3,6 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import MobileNavbar from "@/components/MobileNavbar";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,7 +13,7 @@ export default function Home() {
           autoPlay
           loop
           muted
-          className="absolute inset-0 w-full h-full object-cover "
+          className="absolute inset-0 w-full  object-cover h-screen"
         >
           <source src="/betkingvideo.mp4" type="video/mp4" />
         </video>
@@ -31,11 +30,11 @@ export default function Home() {
               <div>
                 <Brands />
               </div>
-              <section className="mt-10">
+              <section className="mt-20 md:mt-32">
                 <Contact />
               </section>
 
-              <Footer/>
+              <Footer />
             </div>
           </main>
         </div>

@@ -20,13 +20,14 @@ const links = [
 
 const Hero = () => {
   return (
-    <section className="text-white mx-5">
-      <div className="flex flex-col justify-center items-center h-screen">
-        <p className="text-xl">
+    <section className="text-white mx-5 xl:mx-0">
+      <div className="flex flex-col justify-center items-center py-32 md:py-32">
+        <p className="text-xl w-64 mr-auto md:text-2xl xl:max-w-3xl xl:text-3xl xl:mb-20 xl:pl-60 ">
           As a filmmaker and editor, I am passionate about bringing stories to
           life, crafting impactful films that resonate and inspire.
         </p>
-        <div className="flex flex-col items-center gap-5 mt-10">
+
+        <div className="flex flex-col items-center gap-5 mt-10 md:flex-row">
           {links.map((link, index) => (
             <Link
               href={link.href}
