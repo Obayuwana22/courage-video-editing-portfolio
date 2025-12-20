@@ -20,7 +20,7 @@ const links = [
 const Hero = () => {
   return (
     <section className="relative text-white mx-5 xl:mx-0 z-10">
-      <div className="flex flex-col justify-center items-center min-h-screen py-32 md:py-32">
+      <div className="flex flex-col justify-center items-center py-32 md:py-32">
         <p className="text-xl w-64 mr-auto md:text-2xl xl:w-3xl xl:text-3xl xl:mb-20 xl:pl-60 ">
           As a filmmaker and editor, I am passionate about bringing stories to
           life, crafting impactful films that resonate and inspire.

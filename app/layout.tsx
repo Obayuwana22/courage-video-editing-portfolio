@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Courage Obayuwana Films",
-  description: "Courage Obayuwana Films is a creative production brand focused on telling compelling stories through film. We specialize in documentaries, narrative projects, and digital content, combining strong visuals with thoughtful storytelling to create films that resonate, inspire, and leave a lasting impact.",
+  description:
+    "Courage Obayuwana Films is a creative production brand focused on telling compelling stories through film. We specialize in documentaries, narrative projects, and digital content, combining strong visuals with thoughtful storytelling to create films that resonate, inspire, and leave a lasting impact.",
 };
 
 export default function RootLayout({

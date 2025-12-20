@@ -34,7 +34,7 @@ const MobileNavbar = () => {
   }, [openMenu]);
 
   return (
-    <div className="absolute top-0 left-0 w-full z-50">
+    <div className="">
       <nav className="flex justify-between items-center px-5 pt-7 text-white xl:pl-60 xl:pt-20 ">
         <h1
           className={`text-xl md:text-2xl relative z-50
@@ -44,7 +44,7 @@ const MobileNavbar = () => {
           Courage Obayuwana Films
         </h1>
 
-        <div className="hidden xl:flex justify-center absolute left-1/2 transform -translate-x-1/2">
+        <div className="hidden xl:flex justify-center absolute left-1/2 transform -translate-x-1/2 z-50">
           <ul className="flex gap-10">
             {navLinks.map((navLink, index) => (
               <Link href={navLink.href} key={index}>

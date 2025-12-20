@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <main className="">
-        <section className="relative h-screen">
+        <section className="">
           <Hero />
           <video
             poster="/betone18.webp"
@@ -17,9 +17,9 @@ export default function Home() {
           >
             <source src="/betkingvideo.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-black/60 " />
         </section>
-        <div className="bg-black px-5">
+        <div className="bg-black px-5 relative">
           <div>
             <Brands />
           </div>
@@ -27,6 +27,14 @@ export default function Home() {
             <Contact />
           </section>
         </div>
+        {/* <div className="bg-black px-5">
+          <div>
+            <Brands />
+          </div>
+          <section className="mt-20 md:mt-32">
+            <Contact />
+          </section>
+        </div> */}
       </main>
     </>
   );
