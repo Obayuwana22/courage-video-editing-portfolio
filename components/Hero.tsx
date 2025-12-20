@@ -19,7 +19,49 @@ const links = [
 
 const Hero = () => {
   return (
-    <section className="relative text-white mx-5 xl:mx-0 z-10">
+    <section className="h-screen w-full overflow-hidden">
+      <div className="h-full w-full ">
+        <video poster="/betone18.webp" autoPlay loop muted className="h-full w-full object-cover">
+          <source src="/betkingvideo.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/60 " />
+      </div>
+
+      <div className="absolute inset-0 z-10 flex flex-col justify-center items-center px-5 xl:px-0 py-32 md:py-32">
+        <p className="text-xl w-64 mr-auto md:text-2xl xl:w-3xl xl:text-3xl xl:mb-20 xl:pl-60 text-white">
+          As a filmmaker and editor, I am passionate about bringing stories to
+          life, crafting impactful films that resonate and inspire.
+        </p>
+
+        <div className="flex flex-col items-center gap-5 mt-10 md:flex-row">
+          {links.map((link, index) => (
+            <Link
+              href={link.href}
+              key={index}
+              // className="border-2 border-white rounded-full p-5 w-52"
+              className="w-52 rounded-full p-5 bg-white/10 
+  backdrop-blur-xl border border-white/30 shadow-lg transition-all duration-300
+  hover:bg-white/20 hover:scale-105 active:scale-95 relative overflow-hidden
+before:absolute before:inset-0
+before:bg-linear-to-br before:from-white/20 before:to-transparent
+before:opacity-0 hover:before:opacity-100
+before:transition-opacity"
+            >
+              <p className="capitalize text-xl text-center font text-white">
+                {link.label}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
+
+{
+  /* <section className="relative text-white mx-5 xl:mx-0 z-10">
       <div className="flex flex-col justify-center items-center py-32 md:py-32">
         <p className="text-xl w-64 mr-auto md:text-2xl xl:w-3xl xl:text-3xl xl:mb-20 xl:pl-60 ">
           As a filmmaker and editor, I am passionate about bringing stories to
@@ -47,8 +89,5 @@ before:transition-opacity"
           ))}
         </div>
       </div>
-    </section>
-  );
-};
-
-export default Hero;
+    </section> */
+}

@@ -8,7 +8,7 @@ export default function Home() {
       <main className="">
         <section className="">
           <Hero />
-          <video
+          {/* <video
             poster="/betone18.webp"
             autoPlay
             loop
@@ -17,7 +17,7 @@ export default function Home() {
           >
             <source src="/betkingvideo.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-black/60 " />
+          <div className="absolute inset-0 bg-black/60 " /> */}
         </section>
         <div className="bg-black px-5 relative">
           <div>
@@ -27,14 +27,6 @@ export default function Home() {
             <Contact />
           </section>
         </div>
-        {/* <div className="bg-black px-5">
-          <div>
-            <Brands />
-          </div>
-          <section className="mt-20 md:mt-32">
-            <Contact />
-          </section>
-        </div> */}
       </main>
     </>
   );
