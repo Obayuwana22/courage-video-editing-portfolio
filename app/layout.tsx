@@ -1,23 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import MobileNavbar from "@/components/MobileNavbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Courage Obayuwana Films",
+  title: "Antonio Ribeiro films",
   description:
-    "Courage Obayuwana Films is a creative production brand focused on telling compelling stories through film. We specialize in documentaries, narrative projects, and digital content, combining strong visuals with thoughtful storytelling to create films that resonate, inspire, and leave a lasting impact.",
+    "As a filmmaker and editor, I am passionate about bringing stories to life, crafting impactful films that resonate and inspire.",
 };
 
 export default function RootLayout({
@@ -28,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} antialiased`}
       >
         <MobileNavbar />
         {children}

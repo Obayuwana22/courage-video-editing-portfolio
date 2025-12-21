@@ -23,7 +23,7 @@ export default function Home() {
           <div>
             <Brands />
           </div>
-          <section className="mt-20 md:mt-32">
+          <section id="contact" className="mt-20 md:mt-32">
             <Contact />
           </section>
         </div>

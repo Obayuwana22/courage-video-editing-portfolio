@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   {
@@ -10,16 +11,20 @@ const navLinks = [
   },
   {
     label: "gear",
-    href: "/",
+    href: "/gear",
   },
   {
     label: "get in touch",
-    href: "/",
+    href: "/getintouch",
   },
 ];
 
 const MobileNavbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const pathname = usePathname();
+  
+  // Determine if current page has light background
+  const isLightBackground = pathname === "/about" || pathname === "/getintouch";
 
   useEffect(() => {
     if (openMenu) {
@@ -38,17 +43,25 @@ const MobileNavbar = () => {
       <nav className="flex justify-between items-center px-5 pt-7  xl:pl-60 xl:pt-20 absolute w-full z-50">
         <h1
           className={`text-xl md:text-2xl relative z-50
-           ${openMenu ? " text-black" : "text-white"}
+           ${openMenu ? " text-black" : isLightBackground ? "text-black" : "text-white"}
         `}
         >
-          Courage Obayuwana Films
+          Courage Obayuwana films
         </h1>
 
         <div className="hidden xl:flex justify-center absolute left-1/2 transform -translate-x-1/2 z-50">
           <ul className="flex gap-10">
             {navLinks.map((navLink, index) => (
               <Link href={navLink.href} key={index}>
-                <li className="capitalize text-white hover:text-white/70 transition-colors duration-300 cursor-pointer">{navLink.label}</li>
+                <li className={`capitalize transition-colors duration-300 cursor-pointer relative
+                  ${isLightBackground 
+                    ? "text-black hover:text-black/70" 
+                    : "text-white hover:text-white/70"}
+                  ${pathname === navLink.href ? "after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-current" : ""}
+                  hover:after:absolute hover:after:bottom-[-4px] hover:after:left-0 hover:after:w-full hover:after:h-[1px] hover:after:bg-current
+                `}>
+                  {navLink.label}
+                </li>
               </Link>
             ))}
           </ul>
@@ -61,12 +74,12 @@ const MobileNavbar = () => {
         >
           <span
             className={`absolute h-0.5 w-8 transition-all duration-300 ease-in-out
-          ${openMenu ? "rotate-45 top-1/2 bg-black" : "top-2 bg-white/50"}
+          ${openMenu ? "rotate-45 top-1/2 bg-black" : isLightBackground ? "top-2 bg-black" : "top-2 bg-white/50"}
         `}
           />
           <span
             className={`absolute h-0.5 w-8 transition-all duration-300 ease-in-out
-          ${openMenu ? "-rotate-45 top-1/2 bg-black" : "top-5 bg-white/50"}
+          ${openMenu ? "-rotate-45 top-1/2 bg-black" : isLightBackground ? "top-5 bg-black" : "top-5 bg-white/50"}
         `}
           />
         </button>
