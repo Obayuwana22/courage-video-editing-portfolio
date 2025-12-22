@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Antonio Ribeiro films",
+  title: "Courage Obayuwana films",
   description:
     "As a filmmaker and editor, I am passionate about bringing stories to life, crafting impactful films that resonate and inspire.",
 };
