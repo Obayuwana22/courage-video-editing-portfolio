@@ -1,15 +1,24 @@
+import Image from "next/image";
 import React from "react";
 
 export default function GetInTouchPage() {
   return (
-    <main className="min-h-screen flex flex-col md:flex-row ">
+    // <main className="min-h-screen flex flex-col md:flex-row ">
+    <main className="min-h-screen grid grid-cols-1 md:grid-cols-2 ">
+      <Image
+        src="https://images.squarespace-cdn.com/content/v1/673912ce09ade16261d2ef35/9d95dbee-bba8-461d-b297-a5881726687c/0019-28fe0.jpg?format=25"
+        alt="About Courage Obayuwana Films"
+        fill
+        className="object-cover"
+      />
       {/* Left Side - Form (White Background) */}
-      <div className="w-full md:w-1/2 bg-white text-black p-8 md:p-16 lg:p-24 flex items-center pt-32 xl:pt-72 pb-20 xl:pb-60 px-5 xl:px-60">
-        <div className="w-full max-w-xl">
-          <h1 className="text-4xl md:text-5xl font-normal mb-6">
+      {/* <div className="w-full md:w-1/2  text-black p-8 md:p-16 lg:p-24 flex items-center pt-32 xl:pt-72 pb-20 xl:pb-60 px-5 xl:px-60 relative z-10"></div> */}
+      <div className="w-full text-black p-8 flex items-center pt-32 px-5 2xl:pl-60 relative z-10">
+        <div className="w-full max-w-xl xl:mt-20">
+          <h1 className="text-3xl xl:text-4xl font-normal mb-6 ">
             Get in touch
           </h1>
-          <p className="text-lg md:text-xl mb-10 text-black/80 leading-relaxed">
+          <p className="text-lg xl:text-xl mb-10 text-black/80 ">
             Interested in collaborating? Want to discuss your brief? Fill out
             some info and I will be in touch shortly.
           </p>
@@ -19,14 +28,11 @@ export default function GetInTouchPage() {
               {/* Name Fields */}
               <div>
                 <label htmlFor="firstName" className="block mb-3 text-sm">
-                  Name <span className="text-black/50">(required)</span>
+                  Name <span className="text-black">(required)</span>
                 </label>
                 <div className="flex gap-3 w-full">
                   <div className="flex flex-col gap-2 flex-1">
-                    <label
-                      htmlFor="firstName"
-                      className="text-xs text-black/70"
-                    >
+                    <label htmlFor="firstName" className="text-xs text-black">
                       First Name
                     </label>
                     <input
@@ -35,15 +41,14 @@ export default function GetInTouchPage() {
                       name="FirstName"
                       placeholder=""
                       required
-                      className="border border-black/30 rounded-full w-full px-5 py-3 
+                      className="border border-black rounded-full w-full px-5 py-3 
                         bg-white text-black placeholder:text-black/30
-                        focus:outline-none focus:border-black focus:ring-2 focus:ring-black/20
-                        transition-all duration-200"
+                        focus:outline-2 focus:outline-black focus:outline-offset-2"
                     />
                   </div>
 
                   <div className="flex flex-col gap-2 flex-1">
-                    <label htmlFor="lastName" className="text-xs text-black/70">
+                    <label htmlFor="lastName" className="text-xs text-black">
                       Last Name
                     </label>
                     <input
@@ -52,10 +57,9 @@ export default function GetInTouchPage() {
                       name="LastName"
                       placeholder=""
                       required
-                      className="border border-black/30 rounded-full w-full px-5 py-3 
+                      className="border border-black rounded-full w-full px-5 py-3 
                         bg-white text-black placeholder:text-black/30
-                        focus:outline-none focus:border-black focus:ring-2 focus:ring-black/20
-                        transition-all duration-200"
+                        focus:outline-2 focus:outline-black focus:outline-offset-2"
                     />
                   </div>
                 </div>
@@ -72,10 +76,9 @@ export default function GetInTouchPage() {
                   name="Email"
                   placeholder=""
                   required
-                  className="border border-black/30 rounded-full w-full px-5 py-3 
+                  className="border border-black rounded-full w-full px-5 py-3 
                     bg-white text-black placeholder:text-black/30
-                    focus:outline-none focus:border-black focus:ring-2 focus:ring-black/20
-                    transition-all duration-200"
+                    focus:outline-2 focus:outline-black focus:outline-offset-2"
                 />
               </div>
 
@@ -87,13 +90,13 @@ export default function GetInTouchPage() {
                 <textarea
                   id="message"
                   name="message"
-                  rows={5}
+                  rows={3}
                   placeholder=""
                   required
-                  className="border border-black/30 rounded-3xl w-full px-5 py-3 
+                  className="border border-black rounded-3xl w-full px-5 py-3 
                     bg-white text-black placeholder:text-black/30
-                    focus:outline-none focus:border-black focus:ring-2 focus:ring-black/20
-                    transition-all duration-200 resize-none"
+                    focus:outline-2 focus:outline-black focus:outline-offset-2
+                    resize-none"
                 />
               </div>
             </div>
@@ -101,23 +104,14 @@ export default function GetInTouchPage() {
             {/* Submit Button */}
             <button
               type="submit"
+              disabled
               className="mt-6 rounded-full px-10 py-3 bg-black text-white font-medium
                 hover:bg-black/80 transition-all duration-200
-                active:scale-95"
+                active:scale-95 disabled:cursor-not-allowed disabled:opacity-50"
             >
               Send
             </button>
           </form>
-        </div>
-      </div>
-
-      {/* Right Side - Image */}
-      <div className="w-full md:w-1/2 bg-gray-900 min-h-100 md:min-h-screen">
-        <div className="w-full h-full bg-linear-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-          <div className="text-white/20 text-center p-8">
-            {/* Placeholder for background image */}
-            <p className="text-sm">Background Image Area</p>
-          </div>
         </div>
       </div>
     </main>

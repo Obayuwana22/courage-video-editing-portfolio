@@ -11,8 +11,8 @@ export default function GearPage() {
         className="object-cover"
       />
       <div className="absolute inset-0 bg-black/60" />
-      <div className="max-w-4xl z-50 relative">
-        <h1 className="text-4xl md:text-5xl font-normal mb-8">Gear</h1>
+      <div className="max-w-4xl z-50 relative mt-10 xl:mt-20">
+        {/* <h1 className="text-4xl md:text-5xl font-normal mb-8">Gear</h1> */}
 
         <p className="text-lg md:text-xl leading-relaxed mb-12 text-white/90">
           I have extensive experience with a variety of cameras, from Arri Alexa
