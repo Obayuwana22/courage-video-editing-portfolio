@@ -6,10 +6,12 @@ export default function GetInTouchPage() {
     // <main className="min-h-screen flex flex-col md:flex-row ">
     <main className="min-h-screen grid grid-cols-1 md:grid-cols-2 ">
       <Image
-        src="https://images.squarespace-cdn.com/content/v1/673912ce09ade16261d2ef35/9d95dbee-bba8-461d-b297-a5881726687c/0019-28fe0.jpg?format=25"
+        src="/getInTouch.webp"
         alt="About Courage Obayuwana Films"
         fill
         className="object-cover"
+        placeholder="blur"
+        blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI2U1ZTVlNSIvPjwvc3ZnPg=="
       />
       {/* Left Side - Form (White Background) */}
       {/* <div className="w-full md:w-1/2  text-black p-8 md:p-16 lg:p-24 flex items-center pt-32 xl:pt-72 pb-20 xl:pb-60 px-5 xl:px-60 relative z-10"></div> */}
@@ -18,7 +20,7 @@ export default function GetInTouchPage() {
           <h1 className="text-3xl xl:text-4xl font-normal mb-6 ">
             Get in touch
           </h1>
-          <p className="text-lg xl:text-xl mb-10 text-black/80 ">
+          <p className="text-lg xl:text-xl mb-10 text-black ">
             Interested in collaborating? Want to discuss your brief? Fill out
             some info and I will be in touch shortly.
           </p>
