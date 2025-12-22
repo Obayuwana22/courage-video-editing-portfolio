@@ -4,7 +4,7 @@ import React from "react";
 export default function GetInTouchPage() {
   return (
     // <main className="min-h-screen flex flex-col md:flex-row ">
-    <main className="min-h-screen grid grid-cols-1 md:grid-cols-2 ">
+    <main className="relative min-h-screen grid grid-cols-1 md:grid-cols-2 ">
       <Image
         src="/getInTouch.webp"
         alt="About Courage Obayuwana Films"
@@ -13,6 +13,7 @@ export default function GetInTouchPage() {
         placeholder="blur"
         blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI2U1ZTVlNSIvPjwvc3ZnPg=="
       />
+      <div className="absolute inset-0 bg-white/20" />
       {/* Left Side - Form (White Background) */}
       {/* <div className="w-full md:w-1/2  text-black p-8 md:p-16 lg:p-24 flex items-center pt-32 xl:pt-72 pb-20 xl:pb-60 px-5 xl:px-60 relative z-10"></div> */}
       <div className="w-full text-black p-8 flex items-center pt-32 px-5 2xl:pl-60 relative z-10">
