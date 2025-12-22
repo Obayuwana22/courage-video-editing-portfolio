@@ -2,9 +2,9 @@ import React from "react";
 
 export default function GetInTouchPage() {
   return (
-    <main className="min-h-screen flex flex-col md:flex-row">
+    <main className="min-h-screen flex flex-col md:flex-row ">
       {/* Left Side - Form (White Background) */}
-      <div className="w-full md:w-1/2 bg-white text-black p-8 md:p-16 lg:p-24 flex items-center">
+      <div className="w-full md:w-1/2 bg-white text-black p-8 md:p-16 lg:p-24 flex items-center pt-32 xl:pt-72 pb-20 xl:pb-60 px-5 xl:px-60">
         <div className="w-full max-w-xl">
           <h1 className="text-4xl md:text-5xl font-normal mb-6">
             Get in touch
@@ -112,8 +112,8 @@ export default function GetInTouchPage() {
       </div>
 
       {/* Right Side - Image */}
-      <div className="w-full md:w-1/2 bg-gray-900 min-h-[400px] md:min-h-screen">
-        <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+      <div className="w-full md:w-1/2 bg-gray-900 min-h-100 md:min-h-screen">
+        <div className="w-full h-full bg-linear-to-br from-gray-800 to-gray-900 flex items-center justify-center">
           <div className="text-white/20 text-center p-8">
             {/* Placeholder for background image */}
             <p className="text-sm">Background Image Area</p>

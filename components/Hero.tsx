@@ -52,14 +52,14 @@ const Hero = () => {
             <Link
               href={link.href}
               key={index}
-              // className="group relative px-8 py-4 rounded-full border border-white/80 
+              // className="group relative px-8 py-4 rounded-full border border-white/80
               //   bg-transparent text-white text-center text-sm md:text-base
               //   transition-all duration-300 ease-out
               //   hover:bg-white/10 hover:border-white
               //   active:scale-95
               //   min-w-60 md:min-w-65"
 
-                className="text-center w-52 rounded-full p-5 bg-white/10 
+              className="text-center w-52 rounded-full p-5 bg-white/10 
   backdrop-blur-xl border border-white/30 shadow-lg transition-all duration-300
   hover:bg-white/20 hover:scale-105 active:scale-95 relative overflow-hidden
 before:absolute before:inset-0
