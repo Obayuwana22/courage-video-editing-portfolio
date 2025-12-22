@@ -4,8 +4,8 @@ import React from "react";
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#f5f5f5] text-black pt-32 xl:pt-72 pb-20 xl:pb-60 px-5 ">
-      <div className="flex flex-col lg:flex-row xl:justify-center xl:items-start lg:gap-14  xl:gap-28 ">
-        <div className="h-150">
+      <div className="flex flex-col lg:flex-row justify-center items-center xl:items-start lg:gap-14  xl:gap-28 ">
+        <div className="xl:h-150">
           <Image
             src="/about-placeholder.webp"
             alt="About Courage Obayuwana Films"

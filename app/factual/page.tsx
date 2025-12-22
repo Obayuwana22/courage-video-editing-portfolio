@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 // Placeholder project data
 const projects = [
@@ -43,9 +44,13 @@ const projects = [
 
 export default function FactualPage() {
   return (
-    <main className="min-h-screen bg-black text-white pt-32 pb-20 px-5 xl:px-60">
-      <h1 className="text-4xl md:text-5xl font-normal mb-12">
-        Documentary & Factual TV
+    <main className="min-h-screen bg-black text-white pt-32 pb-20 px-5 xl:px-20">
+      <h1 className="text-lg md:text-2xl font-normal mb-20 xl:my-60 text-center">
+        I work in documentary
+        <br />
+        as self-shooting PD and editor.
+        <br />
+        Here&apos;s a sample of past and current projects.
       </h1>
 
       {/* Project Grid */}
@@ -56,9 +61,11 @@ export default function FactualPage() {
             key={project.id}
             className="group relative aspect-video overflow-hidden bg-gray-900 rounded-sm"
           >
-            <img
+            <Image
               src={project.thumbnail}
               alt={project.title}
+              width={500}
+              height={500}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             {/* Hover Overlay with Title */}
