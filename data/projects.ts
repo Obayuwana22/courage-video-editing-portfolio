@@ -1,0 +1,58 @@
+import { Props } from "@/types";
+
+export const projects: Props[] = [
+  {
+    id: 1,
+    title: "The Botanical Mind: Art, Mysticism and the Cosmic Tree",
+    creators: "A film by Martin Clark and Gina Buenfeld-Murley",
+    role: "Director and Editor",
+    thumbnail: "/betone18.webp",
+    slug: "the-botanical-mind",
+    video:  "/betkingvideo.mp4",
+  },
+  {
+    id: 2,
+    title: "Echoes of the Sacred Grove",
+    creators: "A film by Martin Clark",
+    role: "Director",
+    thumbnail: "/betone18.webp",
+    slug: "echoes-of-the-sacred-grove",
+    video:  "/betkingvideo.mp4",
+  },
+  {
+    id: 3,
+    title: "Roots of Light",
+    creators: "A film by Gina Buenfeld-Murley",
+    role: "Editor",
+    thumbnail: "/betone18.webp",
+    slug: "roots-of-light",
+    video:  "/betkingvideo.mp4",
+  },
+  {
+    id: 4,
+    title: "Whispers of the Ancient Forest",
+    creators: "A collaborative film project",
+    role: "Director and Editor",
+    thumbnail: "/betone18.webp",
+    slug: "whispers-of-the-ancient-forest",
+    video:  "/betkingvideo.mp4",
+  },
+  {
+    id: 5,
+    title: "Mycelium Dreams",
+    creators: "An experimental short film",
+    role: "Editor",
+    thumbnail: "/betone18.webp",
+    slug: "mycelium-dreams",
+    video:  "/betkingvideo.mp4",
+  },
+  {
+    id: 6,
+    title: "Cosmic Canopy",
+    creators: "A visual essay by Martin Clark",
+    role: "Director",
+    thumbnail: "/betone18.webp",
+    slug: "cosmic-canopy",
+    video:  "/betkingvideo.mp4",
+  },
+];
